@@ -1,0 +1,19 @@
+<h2> Control flow</h2>
+
+<button (click)="buyFromHere()"> buy from here</button>
+{{currentVehicle() | json }}
+  <h2>Number of cars owened are {{noOfCars}}</h2>
+@if (currentVehicle().count > 2 ) {
+    <h3> you still need to work hard</h3>
+}
+@else {
+    <h3> work harder</h3>
+}
+
+
+<div>
+  <p>
+    things inside the porjected content
+  </p>
+  <ng-content ></ng-content>
+</div>
