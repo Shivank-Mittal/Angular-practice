@@ -11,7 +11,7 @@ import { JsonPipe } from '@angular/common';
   templateUrl: './control-flow.component.html',
   styleUrl: './control-flow.component.scss'
 })
-export class ControlFlowComponent implements OnChanges, DoCheck, AfterContentInit{
+export class ControlFlowComponent implements OnChanges{
 
   @Input() numberOfCars: {count: number} = { count: 0}
 
@@ -24,19 +24,10 @@ export class ControlFlowComponent implements OnChanges, DoCheck, AfterContentIni
   }
   
   ngOnChanges(changes: SimpleChanges): void {
-    debugger
     if(changes){
       console.log(`Count update to ${changes['numberOfCars'].currentValue.count}`)
       this.noOfCars = changes['numberOfCars'].currentValue.count
     }
-  }
-  
-  ngDoCheck(): void {
-    debugger
-  }
-
-  ngAfterContentInit(): void {
-    debugger
   }
 
   buyFromHere(){
