@@ -1,0 +1,17 @@
+<p> Change detection On push</p>
+
+<p>Update the value of items array: <button (click)="addValueArray()"> Add </button></p>
+Array Current value is {{ changeArray | json}}
+
+<div>
+    <h3>With out push component
+    <app-with-out-push [items]="changeArray"></app-with-out-push> 
+    </h3> 
+</div>
+
+
+<div>
+    <h3>With push component
+    <app-with-push [items]="changeArray" ></app-with-push>
+    </h3>
+</div>

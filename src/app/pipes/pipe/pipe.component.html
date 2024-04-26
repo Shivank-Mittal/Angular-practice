@@ -1,0 +1,8 @@
+<section> 
+    <p>Pipes</p>
+    <li>Currency pipe converting the amount {{amount.toString()}} to euros using currency code as parameter: {{amount | currency: 'EUR'}}</li>
+    <li> Currency pipe converting the name {{name}} to title case using TitleCasePipe <b> {{name | titlecase}} </b></li>
+    <li>Currency pipe converting the name {{name}} to title case using TitleCasePipe and then to UpperCasePipe  <b>{{name | titlecase | uppercase}} </b></li>
+    <li>Currency pipe converting the name {{name}} to title case using TitleCasePipe and then to UpperCasePipe  <b>{{name | titlecase | uppercase}} </b></li>
+    <li> This is a custom pipe converting value to bold <span [innerHTML]="name | titlecase | bold"></span></li>
+</section>

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WidgetComponent } from './widget.component';
+import { JsComponent } from './js.component';
 
-describe('WidgetComponent', () => {
-  let component: WidgetComponent;
-  let fixture: ComponentFixture<WidgetComponent>;
+describe('JsComponent', () => {
+  let component: JsComponent;
+  let fixture: ComponentFixture<JsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [WidgetComponent]
+      imports: [JsComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(WidgetComponent);
+    fixture = TestBed.createComponent(JsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

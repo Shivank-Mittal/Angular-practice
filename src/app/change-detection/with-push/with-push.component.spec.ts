@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WidgetComponent } from './widget.component';
+import { WithPushComponent } from './with-push.component';
 
-describe('WidgetComponent', () => {
-  let component: WidgetComponent;
-  let fixture: ComponentFixture<WidgetComponent>;
+describe('WithPushComponent', () => {
+  let component: WithPushComponent;
+  let fixture: ComponentFixture<WithPushComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [WidgetComponent]
+      imports: [WithPushComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(WidgetComponent);
+    fixture = TestBed.createComponent(WithPushComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

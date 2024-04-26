@@ -23,7 +23,6 @@ export class WidgetComponent implements AfterViewInit {
   }
 
   convertFirstLetter(value: string): string{
-    debugger
     const v = [...value];
     v[0] = v[0].toUpperCase()
     return v.join('')

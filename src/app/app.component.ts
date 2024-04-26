@@ -9,7 +9,7 @@ import { GridComponent } from './grid/grid.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SignalMainComponent, DataBindingComponent, NavBarComponent, GridComponent, ControlFlowComponent],
+  imports: [RouterOutlet, SignalMainComponent, DataBindingComponent, NavBarComponent, GridComponent, ControlFlowComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

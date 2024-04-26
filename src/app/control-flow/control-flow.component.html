@@ -1,13 +1,13 @@
-<h2> Control flow</h2>
+<p> Increasing the value will change the control flow to false and else condition will be visible </p>
 
-<button (click)="buyFromHere()"> buy from here</button>
-{{currentVehicle() | json }}
-  <h2>Number of cars owened are {{noOfCars}}</h2>
-@if (currentVehicle().count > 2 ) {
-    <h3> you still need to work hard</h3>
+<button (click)="buyFromHere()"> Buy from here</button>
+<p>{{currentVehicle() | json }}</p>
+<p>Number of cars owned are {{noOfCars}}</p>
+@if (currentVehicle().count < 2 ) {
+    In if statement
 }
 @else {
-    <h3> work harder</h3>
+  In else statement
 }
 
 
